@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cAcikMavi"
+    tools:context=".View.KitapOduncAlmaEkrani">
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="219dp"
+        android:layout_height="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c" />
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="472dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/white_background_2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:text="Kitap kodunu giriniz."
+            android:textColor="#434d94"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background_2"
+            android:ems="10"
+            android:hint="Enter"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColor="@color/mavi"
+            android:textColorHint="@color/mavi"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_background"
+            android:onClick="oduncAl"
+            android:text="Ödünç Al"
+            android:textColor="@color/white"
+            android:textSize="25dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_background"
+            android:onClick="TeslimEt"
+            android:text="Teslim Et"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="200dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="279dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/f" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/g" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

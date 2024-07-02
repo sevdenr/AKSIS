@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.GirisEkrani"
+    android:background="@color/cAcikMavi">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background2" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="278dp"
+        android:layout_height="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/top_1_2_1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textColor="@color/ortaMavi"
+            android:textSize="25sp"></TextView>
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background_2"
+            android:ems="10"
+            android:hint="Enter"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/mavi"
+            android:textColorHint="@color/mavi"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/email_hata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/ortaMavi"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Şifre"
+            android:textColor="@color/ortaMavi"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background_2"
+            android:ems="10"
+            android:hint="Enter"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/mavi"
+            android:textColorHint="@color/mavi"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/sifreUnuttum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="SifreUnuttum"
+            android:text="Şifre mi unuttum"
+            android:textAlignment="center"
+            android:textColor="#434d94" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/girisyap"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:onClick="GirisYap"
+            android:text="Giriş Yap"
+            android:textColor="@color/white"
+            android:textSize="25dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:id="@+id/kayitOl"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="UyeOl"
+            android:text="Mevcut bir hesabınız yok mu? Kayıt olun."
+            android:textAlignment="center"
+            android:textColor="#434d94"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom_1_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

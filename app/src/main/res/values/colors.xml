@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mavi">#0000ff</color>
+    <color name="acikMavi">#7387c2</color>
+    <color name="cAcikMavi">#c6e2ff</color>
+    <color name="leylak">#bcacdb</color>
+    <color name="ortaMavi">#28388d</color>
+    <color name="koyuMavi">#171338</color>
+    <color name="deneme">#e3f2fd</color>
+    <color name="dene">#1b4769</color>
+
+</resources>

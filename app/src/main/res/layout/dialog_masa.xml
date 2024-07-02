@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/diaolog_box">
+
+    <TextView
+        android:id="@+id/masaInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masa Bilgileri"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="79dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRezerve"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background_2"
+            android:text="Rezerve" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIptal"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background_2"
+            android:text="İptal" />
+    </LinearLayout>
+
+</LinearLayout>
